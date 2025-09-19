@@ -9,3 +9,5 @@
 
   Run `npm run dev` to start the development server.
   
+
+  pip install flask flask-mysqldb flask-cors
