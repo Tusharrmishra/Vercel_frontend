@@ -154,7 +154,8 @@ export function ContactPage({ navigateToPage }: ContactPageProps) {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="+91 1234567890"
+                        // placeholder="1234567890"
+                        maxLength={10}
                       />
                     </div>
                     <div>

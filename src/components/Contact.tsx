@@ -8,12 +8,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 
 export function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    inquiryType: ''
+    name: "",
+      email: "",
+      phone: "",
+      company: "",
+      country: "",
+      inquiryType: "",
+      subject: "",
+      message: ""
   });
 
   const handleInputChange = (field: string, value: string) => {
@@ -23,38 +25,36 @@ export function Contact() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      // const response = await fetch('https://www.medivancehealthcare.in/submit_contact', {
-      const response = await fetch('http://localhost:5000/submit_contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbyVXHDf-1fHIzicnb4fFk2_j6f4qksKg98Vh8y5OGzc8LkG_4mlFqE-iMKKpQ-Eybeo/exec", {
+      method: "POST",
+      mode: "no-cors", // required for Google Apps Script
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        alert('Thank you for your inquiry. We will get back to you within 24 hours.');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: '',
-          inquiryType: ''
-        });
-      } else {
-        alert(`Error: ${data.error}`);
-      }
-    } catch (error) {
-      alert('Failed to submit form. Please try again later.');
-      console.error('Error:', error);
-    }
-  };
+    alert("✅ Message sent successfully!");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      country: "",
+      inquiryType: "",
+      subject: "",
+      message: ""
+      
+      
+    });
+  } catch (error) {
+    console.error(error);
+    alert("❌ Error submitting form. Try again.");
+  }
+};
 
   const contactInfo = [
     {
@@ -136,9 +136,43 @@ export function Contact() {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
-                          placeholder="+91 1234567890"
+                          // placeholder="1234567890"
+                          maxLength={10}
                         />
                       </div>
+                      <div>
+                      <label className="block text-gray-700 mb-2">Company/Organization</label>
+                      <Input
+                        value={formData.company}
+                        onChange={(e) => handleInputChange('company', e.target.value)}
+                        placeholder="Your company name"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-gray-700 mb-2">Country *</label>
+                      <Select
+                        value={formData.country}
+                        onValueChange={(value) => handleInputChange('country', value)}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select your country" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {/* <SelectItem value="United States">United States</SelectItem>
+                          <SelectItem value="Canada">Canada</SelectItem>
+                          <SelectItem value="United Kingdom">United Kingdom</SelectItem>
+                          <SelectItem value="de">Germany</SelectItem>
+                          <SelectItem value="fr">France</SelectItem> */}
+                          <SelectItem value="India">India</SelectItem>
+                          {/* <SelectItem value="sg">Singapore</SelectItem>
+                          <SelectItem value="au">Australia</SelectItem>
+                          <SelectItem value="other">Other</SelectItem> */}
+                        </SelectContent>
+                      </Select>
+                    </div>
                       <div>
                         <label className="block text-gray-700 mb-2">Inquiry Type *</label>
                         <Select onValueChange={(value) => handleInputChange('inquiryType', value)}>
