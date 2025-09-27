@@ -10,6 +10,11 @@ import { ProductDetailModal } from './ProductDetailModal';
 import { ScrollToTop } from './ScrollToTop';
 // import { downloadProductLeaflet } from './utils/leafletGenerator';
 
+// Import product images
+import VitamaxilTotalImage from '../assets/Vitamaxil-Total.png';
+import AcepedolMR4Image from '../assets/Augmocil-DDS.png'; // Assuming this is the correct image for Acepedol-MR 4
+import PanogardDSRImage from '../assets/Augmocil_DS.png'; // Assuming this is the correct image for Panogard-DSR
+
 interface Product {
   id: number;
   name: string;
@@ -46,7 +51,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet daily",
       packaging: "10x10 Blister",
       strength: "Multi",
-      image: "/src/assets/Vitamaxil-Total.png"
+      image: VitamaxilTotalImage // Use imported image
     },
     { 
       id: 124, 
@@ -58,19 +63,19 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet every 4-6 hours",
       packaging: "10x10 Blister",
       strength: "4mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: AcepedolMR4Image // Use imported image
     },
     { 
       id: 125, 
       name: "Panogard-DSR", 
-      category: 'cardiovascular', 
+      category: 'gastrointestinal', 
       type: 'Capsules', 
-      description: "In \"For the Management of Acid Peptic Disorders with Motility Disturbance\" \"Dual Action Therapy for Hyperacidity and Gastric Stasis\"",
+      description: "For the Management of Acid Peptic Disorders with Motility Disturbance. Dual Action Therapy for Hyperacidity and Gastric Stasis.",
       indication: "Gastroesophageal Reflux Disease (GERD), Acid Peptic Disorders, Functional Dyspepsia, Chronic Gastritis, Nausea & Vomiting Associated with Acid Reflux, Postprandial Fullness & Bloating, Superior Symptom Relief - For heartburn, nausea, bloating & fullness, Faster Gastric Emptying - Reduces reflux episodes And regurgitation.",
       dosage: "1 capsule daily",
       packaging: "10x10 Blister",
       strength: "Pantaprazole 40mg + Domperidone 30mg",
-      image: "https://images.unsplash.com/photo-1671108503276-1d3d5ab23a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtZWRpY2luZSUyMGNhcHN1bGVzJTIwcGhhcm1hY3l8ZW58MXx8fHwxNzU1NzgxMjU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: PanogardDSRImage // Use imported image
     },
     { 
       id: 126, 
