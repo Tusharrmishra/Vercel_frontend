@@ -9,11 +9,13 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ProductDetailModal } from './ProductDetailModal';
 import { ScrollToTop } from './ScrollToTop';
 // import { downloadProductLeaflet } from './utils/leafletGenerator';
-
 // Import product images
 import VitamaxilTotalImage from '../assets/Vitamaxil-Total.png';
-import AcepedolMR4Image from '../assets/Augmocil-DDS.png'; // Assuming this is the correct image for Acepedol-MR 4
-import PanogardDSRImage from '../assets/Augmocil_DS.png'; // Assuming this is the correct image for Panogard-DSR
+import AugmocilDDSImage from '../assets/Augmocil-DDS.png'; // Assuming this is the correct image for Acepedol-MR 4
+import AugmocilDSImage from '../assets/Augmocil_DS.png'; // Assuming this is the correct image for Panogard-DSR
+import PalmodexLSImage from '../assets/Palmodex-LS.png'; // Assuming this is the correct image for Palmodex-LS
+import Saltofy_SyrupImage from '../assets/Saltofy_Syrup.png'; // Assuming this is the correct image for Saltofy_Syrup
+import SunvicalD3Image from '../assets/Sunvical-D3.png'; // Assuming this is the correct image for Sunvical-D3
 
 interface Product {
   id: number;
@@ -51,7 +53,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet daily",
       packaging: "10x10 Blister",
       strength: "Multi",
-      image: VitamaxilTotalImage // Use imported image
+      image: VitamaxilTotalImage
     },
     { 
       id: 124, 
@@ -63,19 +65,19 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet every 4-6 hours",
       packaging: "10x10 Blister",
       strength: "4mg",
-      image: AcepedolMR4Image // Use imported image
+      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     { 
       id: 125, 
       name: "Panogard-DSR", 
-      category: 'gastrointestinal', 
+      category: 'cardiovascular', 
       type: 'Capsules', 
-      description: "For the Management of Acid Peptic Disorders with Motility Disturbance. Dual Action Therapy for Hyperacidity and Gastric Stasis.",
+      description: "In \"For the Management of Acid Peptic Disorders with Motility Disturbance\" \"Dual Action Therapy for Hyperacidity and Gastric Stasis\"",
       indication: "Gastroesophageal Reflux Disease (GERD), Acid Peptic Disorders, Functional Dyspepsia, Chronic Gastritis, Nausea & Vomiting Associated with Acid Reflux, Postprandial Fullness & Bloating, Superior Symptom Relief - For heartburn, nausea, bloating & fullness, Faster Gastric Emptying - Reduces reflux episodes And regurgitation.",
       dosage: "1 capsule daily",
       packaging: "10x10 Blister",
       strength: "Pantaprazole 40mg + Domperidone 30mg",
-      image: PanogardDSRImage // Use imported image
+      image: "https://images.unsplash.com/photo-1671108503276-1d3d5ab23a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtZWRpY2luZSUyMGNhcHN1bGVzJTIwcGhhcm1hY3l8ZW58MXx8fHwxNzU1NzgxMjU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     { 
       id: 126, 
@@ -99,7 +101,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by the physician",
       packaging: "10x10 Blister",
       strength: "Cholecalciferol 60000 IU",
-      image: "/src/assets/Sunvical-D3.png"
+      image: SunvicalD3Image
     },
     { 
       id: 128, 
@@ -123,7 +125,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "2-5 years: 5ml t.i.d, 6-12 year: 10ml t.i.d",
       packaging: "100ml bottle",
       strength: "Salbutamol 1mg + Etofylline 50mg",
-      image: "/src/assets/Saltofy_Syrup.png"
+      image: Saltofy_SyrupImage
     },
     { 
       id: 130, 
@@ -147,7 +149,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by physician",
       packaging: "6.6gm/30ml bottle",
       strength: "Amoxicillin 400 Mg + Clavulanic Acid 57 mg",
-      image: "/src/assets/Augmocil-DDS.png"
+      image: AugmocilDDSImage
     },
     { 
       id: 132, 
@@ -159,7 +161,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "5ml twice daily",
       packaging: "100ml bottle",
       strength: "1mg/5ml",
-      image: "/src/assets/Palmodex-LS.png"
+      image: PalmodexLSImage
     },
     { 
       id: 133, 
@@ -171,7 +173,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by physician",
       packaging: "30ml bottle",
       strength: "200mg/28.5mg",
-      image: "/src/assets/Augmocil_DS.png"
+      image: AugmocilDSImage
     },
     { 
       id: 134, 
