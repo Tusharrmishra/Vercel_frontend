@@ -3,6 +3,20 @@ import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import ProductCatalog from '../assets/ProductCatalog.jpg';
+import Product1 from '../assets/Product1.jpg';
+import Product2 from '../assets/Product2.jpg';
+import Product3 from '../assets/Product3.jpg';
+import Product4 from '../assets/Product4.jpg';  
+import Product5 from '../assets/Product5.jpg';
+import Product6 from '../assets/Product6.jpg';
+import Product7 from '../assets/Product7.jpg';
+import Product8 from '../assets/Product8.jpg';
+import Product9 from '../assets/Product9.jpg';
+import Product10 from '../assets/Product10.jpg';
+import Product11 from '../assets/Product11.jpg';
+import Product12 from '../assets/Product12.jpg';
+import Product13 from '../assets/Product13.jpg';
 
 interface Product {
   id: number;
@@ -24,72 +38,72 @@ export function MedicinesProducts({ navigateToPage }: MedicinesProductsProps) {
     {
       id: 1,
       name: "Catalog",
-      image: "/src/assets/ProductCatalog.jpg"
+      image: ProductCatalog
     },
     {
       id: 2,
       name: "Augmocil-625",
-      image: "/src/assets/Product1.jpg"
+      image: Product1
     },
     {
       id: 3,
       name: "Augmocil DS",
-      image: "/src/assets/Product2.jpg"
+      image: Product2
     },
     {
       id: 3,
       name: "Vitamaxil-Total",
-      image: "/src/assets/Product3.jpg"
+      image: Product3
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product4.jpg"
+      image: Product4
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product5.jpg"
+      image: Product5
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product6.jpg"
+      image: Product6
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product7.jpg"
+      image: Product7
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product8.jpg"
+      image: Product8
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product9.jpg"
+      image: Product9
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product10.jpg"
+      image: Product10
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product11.jpg"
+      image: Product11
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product12.jpg"
+      image: Product12
     },
     {
       id: 3,
       name: "Augmocil DS Vitamaxil-Total",
-      image: "/src/assets/Product13.jpg"
+      image: Product13
     }
   ];
 

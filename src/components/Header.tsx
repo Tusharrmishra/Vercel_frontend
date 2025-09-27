@@ -135,12 +135,12 @@ export function Header({ navigateToPage }: HeaderProps) {
               >
                 Research & Quality
               </button>
-              <button 
+              {/* <button 
                 onClick={() => scrollToSection('doctors')}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors"
               >
                 Doctors & Patients
-              </button>
+              </button> */}
               <button 
                 onClick={() => handleNavigation('contact-page')}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors"
