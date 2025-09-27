@@ -73,7 +73,7 @@ export function ContactPage({ navigateToPage }: ContactPageProps) {
   const offices = [
     {
       address: 'Office No. 1309, Master Mind-V, Building Royal Palm, Aarey Milk Colony, Goregaon East), Mumbai-400 065.',
-      phone: '+91 7977692965 /+91 8779723410 /+91 8097167052',
+      phone: '+91 7977692965 /   +91 8779723410 /+91 8097167052',
       email: 'medivancehealthcare96@gmail.com',
     }
   ];
@@ -93,13 +93,13 @@ export function ContactPage({ navigateToPage }: ContactPageProps) {
 
       <div className="container mx-auto px-4 lg:px-8 py-8">
         {/* Emergency Contact Alert */}
-        <Alert className="mb-8 border-red-200 bg-red-50">
+        {/* <Alert className="mb-8 border-red-200 bg-red-50">
           <AlertCircle className="h-4 w-4 text-red-600" />
           <AlertDescription className="text-red-800">
             <strong>Medical Emergency:</strong> For life-threatening emergencies, call 911 immediately. 
             For urgent medication-related questions: <strong>24/7 Hotline: 1-800-MEDIVANCE</strong>
           </AlertDescription>
-        </Alert>
+        </Alert> */}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
@@ -251,11 +251,11 @@ export function ContactPage({ navigateToPage }: ContactPageProps) {
               <CardHeader>
                 <CardTitle className="text-gray-900 flex items-center">
                   <MapPin className="h-5 w-5 mr-2 text-blue-600" />
-                  Offices
+                  Address
                 </CardTitle>
-                <CardDescription>
+                {/* <CardDescription>
                   Our offices around the world
-                </CardDescription>
+                </CardDescription> */}
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">

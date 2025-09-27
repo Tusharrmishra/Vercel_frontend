@@ -71,7 +71,7 @@ export function Contact() {
     },
     {
       icon: MapPin,
-      title: "Headquarters",
+      title: "Address",
       details: "Office No. 1309, Master Mind-V, Building Royal Palm, Aarey Milk Colony, Goregaon East), Mumbai-400 065.",
       subtext: "India"
     },
@@ -242,7 +242,7 @@ export function Contact() {
               })}
 
               {/* Emergency Contact */}
-              <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+              {/* <div className="bg-red-50 border border-red-200 rounded-lg p-6">
                 <h4 className="text-red-900 mb-2">Emergency Medical Information</h4>
                 <p className="text-red-800 text-sm mb-3">
                   For urgent medical questions about our products:
@@ -251,7 +251,7 @@ export function Contact() {
                 <p className="text-red-700 text-sm mt-2">
                   For life-threatening emergencies, call 911 immediately.
                 </p>
-              </div>
+              </div> */}
 
               {/* Office Hours */}
               {/* <div className="bg-gray-50 rounded-lg p-6">

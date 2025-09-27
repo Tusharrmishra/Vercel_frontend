@@ -540,7 +540,7 @@ export default function App() {
       <About navigateToPage={navigateToPage} />
       <MedicinesProducts navigateToPage={navigateToPage} />
       <ResearchQuality />
-      <DoctorsPatients />
+      {/* <DoctorsPatients /> */}
       <Contact />
       <Footer navigateToPage={navigateToPage} />
       <ScrollToTop />

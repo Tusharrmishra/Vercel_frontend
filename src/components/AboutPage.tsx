@@ -51,12 +51,12 @@ export function AboutPage({ navigateToPage }: AboutPageProps) {
     //   type: 'Corporate Headquarters & R&D Center',
     //   employees: 500
     // },
-    {
-      location: 'India - Manufacturing',
-      address: 'Office No. 1309, Master Mind-V, Building Royal Palm, Aarey Milk Colony, Goregaon (East), Mumbai-400 065, India',
-      type: 'Primary Manufacturing Facility',
-      // employees: 800
-    },
+    // {
+    //   location: 'India - Manufacturing',
+    //   address: 'Office No. 1309, Master Mind-V, Building Royal Palm, Aarey Milk Colony, Goregaon (East), Mumbai-400 065, India',
+    //   type: 'Primary Manufacturing Facility',
+    //   // employees: 800
+    // },
     // {
     //   location: 'Germany - European Operations',
     //   address: 'Pharmastraße 12, Berlin, Germany',
@@ -139,7 +139,7 @@ export function AboutPage({ navigateToPage }: AboutPageProps) {
           <h2 className="text-3xl text-gray-900 text-center mb-8">Our Story</h2>
           <div className="max-w-4xl mx-auto text-gray-600 space-y-6">
             <p className="text-lg">
-              Founded in 2000 by a team of visionary scientists and healthcare professionals, Medivance Healthcare began with a simple yet powerful mission: to make quality healthcare accessible to everyone, everywhere.
+              Founded by a team of visionary scientists and healthcare professionals, Medivance Healthcare began with a simple yet powerful mission: to make quality healthcare accessible to everyone, everywhere.
             </p>
             <p>
               What started as a small pharmaceutical company with a handful of essential medicines has grown into a global enterprise serving millions of patients across six continents. Our journey has been marked by continuous innovation, strategic partnerships, and an unwavering commitment to pharmaceutical excellence.
@@ -203,7 +203,7 @@ export function AboutPage({ navigateToPage }: AboutPageProps) {
         </div>
 
         {/* Global Facilities */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h2 className="text-3xl text-gray-900 text-center mb-8">Global Facilities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {facilities.map((facility, index) => (
@@ -213,7 +213,7 @@ export function AboutPage({ navigateToPage }: AboutPageProps) {
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                       <Building className="h-6 w-6 text-blue-600" />
                     </div>
-                   {/* <span className="text-sm text-blue-600">{facility.employees} employees</span>*/}
+                   {/* <span className="text-sm text-blue-600">{facility.employees} employees</span>*
                   </div>
                   <CardTitle className="text-gray-900">{facility.location}</CardTitle>
                   <CardDescription className="text-blue-600">{facility.type}</CardDescription>
@@ -227,7 +227,7 @@ export function AboutPage({ navigateToPage }: AboutPageProps) {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Company Statistics */}
         {/* <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-8 lg:p-12 text-white">

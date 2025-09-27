@@ -124,17 +124,17 @@ export function Footer({ navigateToPage }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0 text-center w-full">
               © {currentYear} Medivance Healthcare. All rights reserved.
             </p>
-            <div className="flex flex-wrap gap-6 text-sm">
+            {/* <div className="flex flex-wrap gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Accessibility</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Site Map</a>
-            </div>
+            </div> */}
           </div>
 
           {/* Disclaimer */}

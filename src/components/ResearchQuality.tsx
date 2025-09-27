@@ -64,7 +64,7 @@ export function ResearchQuality() {
                       <span className="text-white text-xs">✓</span>
                     </div>
                     <div>
-                      <h4 className="text-gray-900 mb-1">ISO 9001:2015 Certified</h4>
+                      <h4 className="text-gray-900 mb-1">ISO Certified</h4>
                       <p className="text-gray-600 text-sm">International quality management system standards</p>
                     </div>
                   </div>

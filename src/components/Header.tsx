@@ -73,12 +73,12 @@ export function Header({ navigateToPage }: HeaderProps) {
             >
               Research & Quality
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('doctors')}
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Doctors & Patients
-            </button>
+            </button> */}
             <button 
               onClick={() => handleNavigation('contact-page')}
               className="text-gray-700 hover:text-blue-600 transition-colors"

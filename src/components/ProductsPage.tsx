@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ProductDetailModal } from './ProductDetailModal';
 import { ScrollToTop } from './ScrollToTop';
-import { downloadProductLeaflet } from './utils/leafletGenerator';
+// import { downloadProductLeaflet } from './utils/leafletGenerator';
 
 interface Product {
   id: number;
@@ -46,14 +46,14 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet daily",
       packaging: "10x10 Blister",
       strength: "Multi",
-      image: "https://images.unsplash.com/photo-1606015989047-2ecc98a23ae1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXRhbWluJTIwc3VwcGxlbWVudHMlMjBwaWxsc3xlbnwxfHx8fDE3NTU3ODEyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "/src/assets/Vitamaxil-Total.png"
     },
     { 
       id: 124, 
       name: "Acepedol-MR 4", 
       category: 'analgesics', 
       type: 'Tablets', 
-      description: "Modified release pain relief tablet",
+      description: "Targeted Relief For Musculoskeletal Pain & Inflammation. Contains Etoricoxib 60mg (inhibits COX-2 enzyme, Prostaglandins, Inflammation & Pain) and Thiocolchicoside 4mg (binds to GABA-A receptors, promotes Mobility, Muscle Relaxation, Spasm). Provides fast, focused pain relief + muscle relaxation.",
       indication: "Moderate to severe pain",
       dosage: "1 tablet every 4-6 hours",
       packaging: "10x10 Blister",
@@ -65,23 +65,23 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       name: "Panogard-DSR", 
       category: 'cardiovascular', 
       type: 'Capsules', 
-      description: "Delayed release gastric protection capsule",
-      indication: "Acid reflux, gastric protection",
+      description: "In \"For the Management of Acid Peptic Disorders with Motility Disturbance\" \"Dual Action Therapy for Hyperacidity and Gastric Stasis\"",
+      indication: "Gastroesophageal Reflux Disease (GERD), Acid Peptic Disorders, Functional Dyspepsia, Chronic Gastritis, Nausea & Vomiting Associated with Acid Reflux, Postprandial Fullness & Bloating, Superior Symptom Relief - For heartburn, nausea, bloating & fullness, Faster Gastric Emptying - Reduces reflux episodes And regurgitation.",
       dosage: "1 capsule daily",
       packaging: "10x10 Blister",
-      strength: "40mg",
-      image: "https://images.unsplash.com/photo-1671108503276-1d3d5ab23a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2luZSUyMGNhcHN1bGVzJTIwcGhhcm1hY3l8ZW58MXx8fHwxNzU1NzgxMjU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+      strength: "Pantaprazole 40mg + Domperidone 30mg",
+      image: "https://images.unsplash.com/photo-1671108503276-1d3d5ab23a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtZWRpY2luZSUyMGNhcHN1bGVzJTIwcGhhcm1hY3l8ZW58MXx8fHwxNzU1NzgxMjU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     { 
       id: 126, 
       name: "Acepedol-SP", 
       category: 'analgesics', 
       type: 'Tablets', 
-      description: "Strong pain relief tablet",
-      indication: "Severe pain management",
-      dosage: "1 tablet as needed",
+      description: "Aceclofenac 100 Mg + Paracetamol 325 mg + Serratiopeptidase 15 mg. Superior Partner in Pain Relief. Serratiopeptidase improves antibiotic efficacy in infections caused by Staphylococcus aureus - A key player in inflammatory conditions. Aceclofenac - Blocks COX enzymes (anti-inflammatory). Paracetamol - Centrally reduces fever and pain. Serratiopeptidase - Enzyme that reduces inflammation & edema.",
+      indication: "Musculoskeletal Pain, Post-Surgical Inflammation, Sports Injection / Trauma Swelling, Dental Pain, ENT Infections",
+      dosage: "Convenient BID Dosing",
       packaging: "10x10 Blister",
-      strength: "8mg",
+      strength: "450mg",
       image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     { 
@@ -89,23 +89,23 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       name: "Sunvical-D3", 
       category: 'supplements', 
       type: 'Tablets', 
-      description: "Vitamin D3 supplement",
-      indication: "Vitamin D deficiency",
-      dosage: "1 tablet daily",
+      description: "Power Up the Sunshine Within\" For Vitamin D3 Deficiency & Bone Strength. \"Power Dose for Bone Strength\". \"Sunshine in a Capsule\", \"Your Daily Dose of Strength\", \"The Silent Architect of Bones\", \"Bright Side of Bone Health\", \"Invisible Support, Visible Strength\", \"Deficiency Demolisher\", \"Strength Starts with D3\". Improves Calcium Absorption, Optimizes Bone Health, Builds Immunity, Reduces Cardiometabolic Disorders, Essential During Pregnancy.",
+      indication: "Vitamin D3 Deficiency & Bone Strength, Cardiometabolic Disorders, Essential During Pregnancy",
+      dosage: "As directed by the physician",
       packaging: "10x10 Blister",
-      strength: "1000 IU",
-      image: "https://images.unsplash.com/photo-1606015989047-2ecc98a23ae1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXRhbWluJTIwc3VwcGxlbWVudHMlMjBwaWxsc3xlbnwxfHx8fDE3NTU3ODEyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      strength: "Cholecalciferol 60000 IU",
+      image: "/src/assets/Sunvical-D3.png"
     },
     { 
       id: 128, 
       name: "Acepedol-P", 
       category: 'analgesics', 
       type: 'Tablets', 
-      description: "Paracetamol-based pain relief",
-      indication: "Mild to moderate pain",
+      description: "Aceclofenac 100mg + Paracetamol 325mg. Assured & sustained pain relief with twin power of pain & fever control. Fast, focused & flexible relief with convenient BID dosing. Dual-action: Anti-inflammatory + Anti-pyretic. Aceclofenac offers proven efficacy in over 70% of inflammatory joint cases globally with long-lasting COX-2 selective action. Paracetamol is EULAR-recommended for combination therapy, safe & effective for fever reduction.",
+      indication: "Acute inflammatory flare-ups, musculoskeletal pain, osteoarthritis (OA), rheumatoid arthritis (RA), ankylosing spondylitis, post-traumatic and post-operative pain",
       dosage: "1-2 tablets every 4-6 hours",
       packaging: "10x10 Blister",
-      strength: "500mg",
+      strength: "100mg/325mg",
       image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     { 
@@ -113,68 +113,68 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       name: "Saltofy Syrup", 
       category: 'syrups', 
       type: 'Syrup', 
-      description: "Cough relief syrup",
-      indication: "Cough and cold symptoms",
-      dosage: "10ml three times daily",
+      description: "Salbutamol 1mg + Etofylline 50mg. Power of 2 Bronchodilators. Salbutamol: The reliable bronchodilator. Etofylline: The tested bronchial muscle relaxant. Ensures Easy Breathing. Mixed Fruit Flavour.",
+      indication: "In Bronchial Asthma, Chronic Asthmatic Bronchitis, Productive Asthmatic Cough And COPD (Chronic Obstructive Pulmonary Disease \"t.i.d: thrice a day\")",
+      dosage: "2-5 years: 5ml t.i.d, 6-12 year: 10ml t.i.d",
       packaging: "100ml bottle",
-      strength: "100mg/5ml",
-      image: "https://images.unsplash.com/photo-1700104494922-6edd35d95e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXF1aWQlMjBtZWRpY2luZSUyMHN5cnVwJTIwYm90dGxlfGVufDF8fHx8MTc1NTY4NTA1MHww&ixlib=rb-4.1.0&q=80&w=1080"
+      strength: "Salbutamol 1mg + Etofylline 50mg",
+      image: "/src/assets/Saltofy_Syrup.png"
     },
     { 
       id: 130, 
       name: "Palmodex-DX", 
       category: 'syrups', 
       type: 'Syrup', 
-      description: "Cough suppressant and decongestant",
-      indication: "Cough and nasal congestion",
-      dosage: "5-10ml three times daily",
+      description: "Dextromethorphan 15mg + Chlorpheniramine Maleate 2mg + Phenylephrine 5mg / 5ml Controls cough Effectively !!",
+      indication: "Dry cough, allergic symptoms, nasal congestion",
+      dosage: "As directed by the physician",
       packaging: "100ml bottle",
-      strength: "Multi",
+      strength: "15mg/2mg/5mg per 5ml",
       image: "https://images.unsplash.com/photo-1700104494922-6edd35d95e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXF1aWQlMjBtZWRpY2luZSUyMHN5cnVwJTIwYm90dGxlfGVufDF8fHx8MTc1NTY4NTA1MHww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     { 
       id: 131, 
       name: "Augmocil-DDS", 
       category: 'antibiotics', 
-      type: 'Tablets', 
-      description: "Double strength antibiotic combination",
-      indication: "Severe bacterial infections",
-      dosage: "1 tablet twice daily",
-      packaging: "10x10 Blister",
-      strength: "625mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      type: 'Syrup', 
+      description: "Augmocil-DDS is a high-dose pediatric antibiotic syrup with Vanilla Flavour. It contains Amoxicillin 400 Mg + Clavulanic Acid 57 mg. Amoxicillin disrupts bacterial cell wall synthesis, while Clavulanic acid blocks B-lactamase enzymes, saving Amoxicillin and maintaining efficacy against resistant S. pneumoniae and H. influenzae. It is clinically proven for penicillin-resistant strains and backed by AAP & IDSA pediatric guidelines.",
+      indication: "Acute Otitis Media, Sinusitis & Respiratory Infections, persistent or resistant infections.",
+      dosage: "As directed by physician",
+      packaging: "6.6gm/30ml bottle",
+      strength: "Amoxicillin 400 Mg + Clavulanic Acid 57 mg",
+      image: "/src/assets/Augmocil-DDS.png"
     },
     { 
       id: 132, 
       name: "Palmodex-LS", 
       category: 'syrups', 
       type: 'Syrup', 
-      description: "Levosalbutamol syrup for respiratory relief",
+      description: "In Productive Cough Associated with LRTI' And Asthma. Levosalbutamol 1mg, Ambroxol 30mg, Guaiphenesin 50mg/5ml. Controls cough Effectively !! Levosalbutamol: Relaxes bronchial smooth muscles & ensures comfortable breathing. Ambroxol: Breaks the mucus & improves the flow. Guaiphenesin: Expels the phlegm & clears the airway.",
       indication: "Bronchial asthma, bronchitis",
       dosage: "5ml twice daily",
       packaging: "100ml bottle",
       strength: "1mg/5ml",
-      image: "https://images.unsplash.com/photo-1700104494922-6edd35d95e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXF1aWQlMjBtZWRpY2luZSUyMHN5cnVwJTIwYm90dGxlfGVufDF8fHx8MTc1NTY4NTA1MHww&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "/src/assets/Palmodex-LS.png"
     },
     { 
       id: 133, 
       name: "Augmocil DS", 
       category: 'antibiotics', 
-      type: 'Tablets', 
-      description: "Double strength amoxicillin combination",
-      indication: "Moderate to severe bacterial infections",
-      dosage: "1 tablet twice daily",
-      packaging: "10x10 Blister",
-      strength: "500mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      type: 'Syrup', 
+      description: "Amoxicillin 200 Mg + Clavulanic Acid 28.5 mg Dry Syrup",
+      indication: "Respiratory Tract Infections, Pediatric RTI, LRTI, Otitis Media",
+      dosage: "As directed by physician",
+      packaging: "30ml bottle",
+      strength: "200mg/28.5mg",
+      image: "/src/assets/Augmocil_DS.png"
     },
     { 
       id: 134, 
       name: "Augmocil-625", 
       category: 'antibiotics', 
       type: 'Tablets', 
-      description: "High-strength antibiotic combination",
-      indication: "Severe bacterial infections",
+      description: "Amoxicillin 500 Mg + Clavulanic Acid 125 mg. Amoxicillin inhibits cell wall synthesis; Clavulanic acid blocks beta-lactamase enzymes, ensuring broader antibacterial activity.",
+      indication: "Acute Otitis Media (AOM), Upper Respiratory Tract Infections (URTI), Lower Respiratory Tract Infections (LRTI), Sinusitis, Pharyngitis, Tonsillitis",
       dosage: "1 tablet twice daily",
       packaging: "10x10 Blister",
       strength: "625mg",
@@ -185,8 +185,8 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       name: "Vitamaxil-Tablet", 
       category: 'supplements', 
       type: 'Tablets', 
-      description: "Essential vitamin and mineral supplement",
-      indication: "Daily nutritional support",
+      description: "Lycopene, Multivitamin, Multimineral with Antioxidants Tablets. For Daily Cellular Nutrition & Antioxidant Defense. Boost immunity and reduce oxidative stress. Crucial for antiviral defense and immune-cell function. Vitamin B-Complex Supports energy metabolism and reduces fatigue.",
+      indication: "Daily cellular nutrition, antioxidant defense, immunity boost, energy metabolism, and fatigue reduction.",
       dosage: "1 tablet daily",
       packaging: "10x10 Blister",
       strength: "Multi",
@@ -244,9 +244,9 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
     setSelectedProduct(null);
   };
 
-  const handleDownloadLeaflet = (product: Product) => {
-    downloadProductLeaflet(product);
-  };
+  // const handleDownloadLeaflet = (product: Product) => {
+  //   downloadProductLeaflet(product);
+  // };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -300,7 +300,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
             </Select>
           </div>
 
-          <div className="mt-4 flex items-center justify-between">
+          {/* <div className="mt-4 flex items-center justify-between">
             <p className="text-sm text-gray-600">
               Showing {filteredProducts.length} of {allProducts.length} products
             </p>
@@ -308,7 +308,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
               <Filter className="h-4 w-4 mr-2" />
               Advanced Filters
             </Button>
-          </div>
+          </div> */}
         </div>
 
         {/* Products Grid */}
@@ -368,7 +368,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
                     <Info className="h-4 w-4 mr-1" />
                     Details
                   </Button>
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     size="sm" 
                     className="flex-1"
@@ -376,7 +376,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
                   >
                     <Download className="h-4 w-4 mr-1" />
                     Leaflet
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>

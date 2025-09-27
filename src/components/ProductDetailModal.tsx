@@ -228,7 +228,7 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                   <TabsTrigger value="clinical" className="text-xs md:text-sm">Clinical</TabsTrigger>
                   <TabsTrigger value="safety" className="text-xs md:text-sm">Safety</TabsTrigger>
                   <TabsTrigger value="interactions" className="text-xs md:text-sm">Interactions</TabsTrigger>
-                  <TabsTrigger value="technical" className="text-xs md:text-sm">Technical</TabsTrigger>
+                  {/* <TabsTrigger value="technical" className="text-xs md:text-sm">Technical</TabsTrigger> */}
                 </TabsList>
               </div>
 
@@ -512,7 +512,7 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                 </TabsContent>
 
                 {/* Technical Tab */}
-                <TabsContent value="technical" className="space-y-6 mt-0">
+                {/* <TabsContent value="technical" className="space-y-6 mt-0">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
                     <Card>
                       <CardHeader>
@@ -537,7 +537,7 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                       </CardContent>
                     </Card>
 
-                    <Card>
+                    {/* <Card>
                       <CardHeader>
                         <CardTitle className="flex items-center text-lg">
                           <FileText className="h-5 w-5 mr-2 text-green-600" />
@@ -558,10 +558,10 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                           <p className="text-gray-900 mt-1">See packaging for batch-specific information</p>
                         </div>
                       </CardContent>
-                    </Card>
+                    </Card> 
                   </div>
 
-                  <Card className="bg-blue-50 border-blue-200">
+                  {/* <Card className="bg-blue-50 border-blue-200">
                     <CardHeader>
                       <CardTitle className="text-blue-800 text-lg">Need More Information?</CardTitle>
                     </CardHeader>
@@ -583,8 +583,8 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                </TabsContent>
+                  </Card> 
+                </TabsContent> */}
               </div>
             </Tabs>
           </div>
@@ -615,14 +615,14 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
                 <Printer className="h-3 w-3 mr-1" />
                 Print
               </Button>
-              <Button 
+              {/* <Button 
                 size="sm" 
                 className="bg-blue-600 hover:bg-blue-700 text-xs"
                 onClick={handleContactMedicalTeam}
               >
                 <MessageCircle className="h-3 w-3 mr-1" />
                 Contact Medical Team
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
