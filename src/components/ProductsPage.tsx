@@ -9,13 +9,27 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ProductDetailModal } from './ProductDetailModal';
 import { ScrollToTop } from './ScrollToTop';
 // import { downloadProductLeaflet } from './utils/leafletGenerator';
+import Product1 from '../assets/Product1.jpg';
+import Product2 from '../assets/Product2.jpg';
+import Product3 from '../assets/Product3.jpg';
+import Product4 from '../assets/Product4.jpg';  
+import Product5 from '../assets/Product5.jpg';
+import Product6 from '../assets/Product6.jpg';
+import Product7 from '../assets/Product7.jpg';
+import Product8 from '../assets/Product8.jpg';
+import Product9 from '../assets/Product9.jpg';
+import Product10 from '../assets/Product10.jpg';
+import Product11 from '../assets/Product11.jpg';
+import Product12 from '../assets/Product12.jpg';
+import Product13 from '../assets/Product13.jpg';
+
 // Import product images
-import VitamaxilTotalImage from '../assets/Vitamaxil-Total.png';
-import AugmocilDDSImage from '../assets/Augmocil-DDS.png'; // Assuming this is the correct image for Acepedol-MR 4
-import AugmocilDSImage from '../assets/Augmocil_DS.png'; // Assuming this is the correct image for Panogard-DSR
-import PalmodexLSImage from '../assets/Palmodex-LS.png'; // Assuming this is the correct image for Palmodex-LS
-import Saltofy_SyrupImage from '../assets/Saltofy_Syrup.png'; // Assuming this is the correct image for Saltofy_Syrup
-import SunvicalD3Image from '../assets/Sunvical-D3.png'; // Assuming this is the correct image for Sunvical-D3
+// import VitamaxilTotalImage from '../assets/Vitamaxil-Total.png';
+// import AugmocilDDSImage from '../assets/Augmocil-DDS.png'; // Assuming this is the correct image for Acepedol-MR 4
+// import AugmocilDSImage from '../assets/Augmocil_DS.png'; // Assuming this is the correct image for Panogard-DSR
+// import PalmodexLSImage from '../assets/Palmodex-LS.png'; // Assuming this is the correct image for Palmodex-LS
+// import Saltofy_SyrupImage from '../assets/Saltofy_Syrup.png'; // Assuming this is the correct image for Saltofy_Syrup
+// import SunvicalD3Image from '../assets/Sunvical-D3.png'; // Assuming this is the correct image for Sunvical-D3
 
 interface Product {
   id: number;
@@ -53,7 +67,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet daily",
       packaging: "10x10 Blister",
       strength: "Multi",
-      image: VitamaxilTotalImage
+      image: Product8
     },
     { 
       id: 124, 
@@ -65,7 +79,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet every 4-6 hours",
       packaging: "10x10 Blister",
       strength: "4mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product6
     },
     { 
       id: 125, 
@@ -77,7 +91,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 capsule daily",
       packaging: "10x10 Blister",
       strength: "Pantaprazole 40mg + Domperidone 30mg",
-      image: "https://images.unsplash.com/photo-1671108503276-1d3d5ab23a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtZWRpY2luZSUyMGNhcHN1bGVzJTIwcGhhcm1hY3l8ZW58MXx8fHwxNzU1NzgxMjU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product13
     },
     { 
       id: 126, 
@@ -89,7 +103,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "Convenient BID Dosing",
       packaging: "10x10 Blister",
       strength: "450mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product5
     },
     { 
       id: 127, 
@@ -101,7 +115,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by the physician",
       packaging: "10x10 Blister",
       strength: "Cholecalciferol 60000 IU",
-      image: SunvicalD3Image
+      image: Product12
     },
     { 
       id: 128, 
@@ -113,7 +127,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1-2 tablets every 4-6 hours",
       packaging: "10x10 Blister",
       strength: "100mg/325mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product4
     },
     { 
       id: 129, 
@@ -125,7 +139,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "2-5 years: 5ml t.i.d, 6-12 year: 10ml t.i.d",
       packaging: "100ml bottle",
       strength: "Salbutamol 1mg + Etofylline 50mg",
-      image: Saltofy_SyrupImage
+      image: Product11
     },
     { 
       id: 130, 
@@ -137,7 +151,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by the physician",
       packaging: "100ml bottle",
       strength: "15mg/2mg/5mg per 5ml",
-      image: "https://images.unsplash.com/photo-1700104494922-6edd35d95e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXF1aWQlMjBtZWRpY2luZSUyMHN5cnVwJTIwYm90dGxlfGVufDF8fHx8MTc1NTY4NTA1MHww&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product10
     },
     { 
       id: 131, 
@@ -149,7 +163,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by physician",
       packaging: "6.6gm/30ml bottle",
       strength: "Amoxicillin 400 Mg + Clavulanic Acid 57 mg",
-      image: AugmocilDDSImage
+      image: Product3
     },
     { 
       id: 132, 
@@ -161,7 +175,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "5ml twice daily",
       packaging: "100ml bottle",
       strength: "1mg/5ml",
-      image: PalmodexLSImage
+      image: Product9
     },
     { 
       id: 133, 
@@ -173,7 +187,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "As directed by physician",
       packaging: "30ml bottle",
       strength: "200mg/28.5mg",
-      image: AugmocilDSImage
+      image: Product2
     },
     { 
       id: 134, 
@@ -185,7 +199,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet twice daily",
       packaging: "10x10 Blister",
       strength: "625mg",
-      image: "https://images.unsplash.com/photo-1667058015056-b03fa4974abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjZXV0aWNhbCUyMHBpbGxzJTIwdGFibGV0c3xlbnwxfHx8fDE3NTU3ODEyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product1
     },
     { 
       id: 135, 
@@ -197,7 +211,7 @@ export function ProductsPage({ navigateToPage }: ProductsPageProps) {
       dosage: "1 tablet daily",
       packaging: "10x10 Blister",
       strength: "Multi",
-      image: "https://images.unsplash.com/photo-1606015989047-2ecc98a23ae1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXRhbWluJTIwc3VwcGxlbWVudHMlMjBwaWxsc3xlbnwxfHx8fDE3NTU3ODEyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: Product7
     },
   ];
 
